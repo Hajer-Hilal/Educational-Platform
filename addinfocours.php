@@ -29,12 +29,23 @@ while($row = mysqli_fetch_array($result)) {
   <label for="fname">title courses: </label>
   <input type="text" id="fname" name="title" value="John">
   <br><br>
+  <!-- <div class="full-width"> -->
+      <label>Describtion</label>
+       <textarea name="des" id="message"></textarea>
+       <br><br>
+    <!-- </div> -->
   <label for="courses">Choose a Course level:</label>
   <select name="level" id="courses">
       <option value="Beginner">Beginner</option>
       <option value="Intermediate">Intermediate</option>
       <option value="Advanced">Advanced</option>
   </select><br> <br>
+  <label for="avatar">Choose picture:</label>
+
+<input type="file"
+       id="avatar" name="image"
+       accept="image/png, image/jpeg">
+       <br> <br>
   <input type="submit" name="infocourses" value="Submit">
 </form> 
 </body>

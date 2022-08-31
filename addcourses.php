@@ -10,9 +10,11 @@
     {
     $title= $_POST['title'];
     $level= $_POST['level'];
+    $des= $_POST['des'];
+    $image= $_POST['image'];
     echo $title;
-    $sql="INSERT INTO `courses` (`title`, `level`,`id_instroctor`)
-    VALUES ('$title', '$level','$id_ins')";
+    $sql="INSERT INTO `courses` (`title`, `level`,`description`,`image`,`id_instroctor`)
+    VALUES ('$title', '$level','$des','$image','$id_ins')";
      $result = mysqli_query($conn,$sql);
  
     
